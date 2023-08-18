@@ -1,0 +1,24 @@
+h1{
+    color: blueviolet;
+    text-align: center;
+    font-size: 70px;
+}
+#navigate{
+
+    text-align: center;
+}
+
+#navigate button{
+    position: relative;
+    top: 1%;
+    color: blue;
+    border: none;
+    margin: 0 2 0px;
+    font-size: 20px;
+    background-color: black;
+    padding: 10px 15px;
+}
+body{
+    background-color: darkkhaki;
+    font-family: sans-serif;
+}
