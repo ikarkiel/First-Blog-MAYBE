@@ -9,7 +9,5 @@ def furkan(request):
     return HttpResponse("Hello, furkan!")
 def xd(request):
     return HttpResponse("xd")
-def greet(request, name):
-    return render(request, "info/greet.html",{
-        "name": name.capitalize()
-    })
+def aboutmyself(request):
+    return render(request,"info/aboutme.html")

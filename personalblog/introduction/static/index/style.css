@@ -1,24 +1,82 @@
-h1{
-    color: blueviolet;
+@keyframes navbar-color-change{
+    0% {
+        background: midnightblue;
+      }
+      100% {
+        background: #333;
+}
+}
+@keyframes change-background {
+    0% {
+      background: #333;
+    }
+    100% {
+      background: midnightblue;
+    }
+
+}
+@keyframes change-color{
+    from{
+        color: #333;
+    }
+    
+    to{
+        color: white;
+    }
+
+}
+#navigate ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    padding: 30 30 30px;
+    
+    
+}
+#navigate li{
+    display: inline;
+    position: relative;
+}
+
+h2{
+    color: White;
     text-align: center;
-    font-size: 70px;
+    margin-top: 120px;
+    font-size: 50px;
 }
 #navigate{
 
     text-align: center;
+    margin: 7% 0 0px;
+    
 }
 
-#navigate button{
-    position: relative;
+#navigate a{
+    position: fixed;
     top: 1%;
-    color: blue;
+    color: white;
     border: none;
-    margin: 0 2 0px;
-    font-size: 20px;
-    background-color: black;
-    padding: 10px 15px;
+    position: relative ;
+    font-size: 30px;
+    background-color: #333;
+    margin: 0 -4 0px;
+    padding: 15 15 15px;
+    border: 3px solid black;
+    border-top: none;
+    border-bottom: none;
+    text-decoration: none;
+    
+    
 }
+
 body{
-    background-color: darkkhaki;
+    background-color: midnightblue;
     font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: change-background 8s ease ;
 }
+
