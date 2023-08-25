@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: #f5f6fa;
+}
+
+.wrapper .sidebar{
+    background:  rgb(80, 91, 97);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 255px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5 ease;
+    border-right: black solid 2px;
+    
+}
+
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.wrapper .sidebar .profile img{
+    object-fit: cover;
+    border: 3px solid black;
+    background-color: white;
+     display: block;
+     width: 110px;
+     height: 110px;
+     border-radius: 50%;
+     margin: 0 auto;
+     
+}
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+.wrapper .sidebar .profile hr{
+    background-color: black;
+    border: none;
+    height: 2px;
+    margin-top: 3px;
+    
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #000;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.sidebar-link.active{
+    color: #1635e4;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.sidebar-link.active .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+.content{
+    align-self: center;
+}
+.wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+    background: rgb(80, 91, 97);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    
+
+}
+
+.wrapper .section .top_navbar .heading{
+    position: fixed;
+    text-align: center;
+    font-size: relative;
+    color: #f4fbff;
+   
+    
+}
+.wrapper .section .top_navbar .heading h2{
+    vertical-align: middle;
+    
+}
+    
+
+
+.wrapper .section .top_navbar .heading h2:hover{
+    color: #000;
+}
+body.active .wrapper .sidebar{
+    left: -225px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+

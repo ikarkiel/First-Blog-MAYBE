@@ -1,26 +1,8 @@
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'index/style.css' %}">
-    <title>Document</title>
-</head>
-<body>
-    <h2>This is information about myself</h2>
-    <div id="navigate">
-       <ul>
-        <li><a href="{% url 'aboutme' %}">Page 1</a></li>
-        <li><a href="">Page 2</a></li>
-        <li><a href="">Page 3</a></li>
-        <li><a href="">Page 4</a></li>
-        <li><a href="">Page 5</a></li>
-        <li><a href="">Page 6</a></li>
-        <li><a href="">Page 7</a></li>
-       </ul>
-    </div>
+
+   {% extends 'info/layout.html' %}
+   {% block body %}
     <div id="content">
      <h1>hello</h1>
+     this is a test
     </div>
-</body>
-</html>
+   {% endblock %}
